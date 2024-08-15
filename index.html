@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+   
+    nav{
+      width:auto;
+      height:70px;
+      display:flex;
+      align-items:center;
+      background-color: black;
+      color:white;
+    }
+    nav h1{
+      margin-left:60px;
+      margin-right:900px;
+    }
+    nav button{
+      margin-right:30px;
+      background-color: black;
+      color:white;
+    }
+    #home{
+      width:auto;
+      height:200px;
+      margin-top:100px;
+      margin-bottom:100px;
+      margin:50px;
+    }
+    #about{
+      width:auto;
+      height:550px;
+      margin:50px;
+    }
+    #projects{
+      margin:50px;
+    }
+    form{
+      border:1px solid black;
+      margin:0px 200px;
+    }
+    label{
+      font-size:20px;
+      font-weight: bold;
+      margin-right:30px;
+      margin-left:300px;
+    }
+    input[type='text']{
+      margin-top:40px;
+      height:30px;
+      width:410px;
+      margin-bottom:30px;
+      margin-left:27px;
+    }
+    input[type='email']{
+      height:30px;
+      width:410px;
+      margin-bottom:30px;
+      margin-left:30px;
+    }
+    textarea{
+      height:60px;
+      width:410px;
+    }
+    input[type='button']{
+      margin-top:40px;
+      height:40px;
+      width:150px;
+      border-radius:7px;
+      margin-left:475px;
+    }
+    .hea{
+      margin:0px 200px 0px 200px;
+      display:grid;
+      align-items: center;
+    }
+    footer{
+      height:40px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      background-color: black;
+      color:white;
+    }
+    #contact{
+      margin-bottom: 50px;
+      margin:50px;
+    }
+    .d{
+      margin:20px;
+    }
+    section{
+      border:4px solid black;
+      border-radius:10px;
+    }
+  </style>
+</head>
+<body bgcolor="skyblue">
+  <header>
+    <nav>
+      <h1>Waseem</h1>
+      <button onclick="srollhome()">Home</button>
+      <button onclick="srollabout()">About</button>
+      <button onclick="srollproject()">Projects</button>
+      <button onclick="srollcontact()">Contact</button>
+    </nav>
+  </header>
+  <section id="home">
+    <div class="d">
+    <h2>Hello I am Waseem</h2>
+    <article>Aspiring B.Tech graduate specializing in CSE with a strong foundation in Software development, web development and
+      many other technologies.</article>
+  </div>
+  </section>
+  <section id="about">
+    <div class="d">
+    <h2>About Me:</h2>
+    <article>Aspiring B.Tech graduate specializing in CSE with a strong foundation in Software development, web development and
+      many other technologies. Demonstrates excellent problem-solving abilities and a keen interest in innovative technology
+      solutions. Proven track record of successful project completion, teamwork, and effective communication skills.
+      Enthusiastic about leveraging technical expertise to contribute to dynamic engineering teams and drive organizational
+      growth.</article>
+    <div>
+      <div>
+        <h3>Secondary Educational Details:</h3>
+        <ul>
+          <li>2018-2019</li>
+          <li>VSEM High School</li>
+          <li>Vellaturu</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Secondary Educational Details:</h3>
+        <ul>
+          <li>2019-2021</li>
+          <li>Bhashyam jr collage</li>
+          <li>Guntur</li>
+        </ul>
+      </div>
+      <div>
+        <h3>B.tech Educational Details:</h3>
+        <ul>
+          <li>2021-2025</li>
+          <li>vfstr</li>
+          <li>Vadlamudi</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </section>
+  <section id="projects">
+    <div class="d">
+    <h2>Projects:</h2>
+    <div>
+      <h3>Projects-1:</h3>
+      <article>Handwritten Text Recognition (HTR) is the process of teaching computers to understand and convert handwritten text
+        into digital form. It's like teaching a computer to read your handwritten notes. By training these systems on lots of
+        examples, they can learn to accurately recognize and transcribe handwritten text, making it easier to digitize and work
+        with handwritten documents.</article>
+    </div>
+    <div>
+      <h3>Projects-2:</h3>
+      <article>The railway reservation system is a computerized system that allows passengers to book train tickets online or at
+        reservation counters. It provides real-time information on train schedules, seat availability, and ticket prices.
+        Additionally, it facilitates secure payment options and generates e-tickets for convenience.</article>
+    </div>
+   
+  </div>
+  </section>
+  <section id="contact">
+    <div class="d">
+    <div class="hea">
+      <center><h4>Please Enter Your Details Here</h4></center>
+    </div>
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" placeholder="Enter Your Name" id="name"><br>
+      <label for="mail">Email:</label>
+      <input type="email" placeholder="Enter Your Email" id="mail"><br>
+      <label>Message:</label>
+      <textarea placeholder="Enter The Message" id="msg"></textarea><br>
+      <input type="button" value="submit" Onclick="document.getElementById('demo').style.display='block'">
+      <center><p id="demo">Thank You For Entering Your Details</p></center>
+    </form>
+  </div>
+  </section>
+  <footer>
+    <p>©All Copyrights are Reserved For Kukkala Karunakar</p>
+  </footer>
+  <script>
+    function srollhome(){
+      document.getElementById('home').scrollIntoView()
+    }
+    function srollabout(){
+      document.getElementById('about').scrollIntoView()
+    }
+    function srollproject(){
+      document.getElementById('projects').scrollIntoView()
+    }
+    function srollcontact(){
+      document.getElementById('contact').scrollIntoView()
+    }
+  </script>
+</body>
+</html>
